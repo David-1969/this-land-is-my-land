@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="woody.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">  This Land Is Your Land</h2>
+  <p id="albumDescription"> Lançado em 1951, This Land Is Your Land é um dos álbuns mais emblemáticos de Woody Guthrie, um dos maiores nomes do folk americano. O disco contém algumas das músicas mais representativas da sua carreira, incluindo a faixa-título, que se tornou um hino de união e resistência nos Estados Unidos. A sonoridade do álbum é simples e direta, com guitarras acústicas e vocais de Guthrie acompanhados por arranjos minimalistas, destacando a beleza das letras, que abordam temas de justiça social, desigualdade e a vida do povo comum. Guthrie usa suas canções para narrar histórias do cotidiano e para questionar as condições políticas e econômicas da época, sempre com um tom otimista e esperançoso. This Land Is Your Land representa o espírito do folk de protesto e é uma obra fundamental para compreender a evolução da música folk e a relação dela com os movimentos sociais e políticos nos Estados Unidos. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> This Land Is Your Land -
+    Pretty Boy Floyd -
+    Do Re Mi -
+    Dust Bowl Blues -
+    I Ain't Got No Home -
+    Song for the Soldier.
+    <p id="albumDescription"> <strong>Lado 2:</strong> Deportee (Plane Wreck at Los Gatos) -
+        So Long, It's Been Good to Know Yuh -
+        The Biggest Thing That Man Has Ever Done -
+        Talking Dust Bowl Blues -
+        The Jolly Banker -
+        Hard, Ain't It Hard.</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
